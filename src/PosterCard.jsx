@@ -30,12 +30,12 @@ const PosterCard = ({ classes, posterUrl, movieDetails }) => (
           {movieDetails.release_date}
         </Typography>
         <Typography color="textSecondary">
-          Rating: {movieDetails.rating_average}
+          User score: {movieDetails.vote_average}
         </Typography>
         <Typography component="p">{movieDetails.overview}</Typography>
       </CardContent>
       <CardActions>
-        <Button href="https://www.themoviedb.org/movie/{movieDetails.id}"
+        <Button href={`https://www.themoviedb.org/movie/${movieDetails.id}`}
           className="classes.button">
           Read more
         </Button>
