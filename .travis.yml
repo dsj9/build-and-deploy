@@ -1,10 +1,13 @@
 language: node_js
 node_js:
-  - '10'
+- '10'
 cache:
   directories:
   - node_modules
 script:
-  - npm run lint
-  - npm test
-  - npm run build
+- npm run lint
+- npm test
+- npm run build
+deploy:
+  api_key:
+    secure: heymnI9Cz1WjDsFThnISqpWr7NvOWpjz4C6OZF2n9Np1uYOg1RbusGEzYO6NjBJY9Y+I4iKT5dKT9z7YutYhSIIj5u6OdaPVmDXNjocU7zte26sv7tYrfccKbvX4QEArgi0leNl9HGLy8qruFy9z2n0fcM1yqwredM8rrkGYlVxrqqNerAmUoS+WUvb/B3AA0jzuwK1QaQYmL6m/n9aP5t9SEZM5QCN3XblGwUG/q4o70Ghii1RBknOpdzLOk7y7t9pzpjMwBPGoo2nvz4jNQg51aJuU9/P6Qh3NfYuP9smpHtnwdjMOrPvAAql3GxwGEV+kXqd4AMvX2d3sN6XpcVIBi6DYgnTtdacTphwJG7RR+nDuUuD1t1oOGMhqh6Sd+2Kh+WJFJPIF/t7bG6n6XbJqEtPDzF7BJZhd/7c5CArPhrkZ8G6pm3283x0r7HDyNTcg1jqY0fSjFdu7J7qN248uCyXthZdBuG07jixrAs7TDsPYAzjy9geGybTUA7zv3kiGmSkKhRo3Fl2+BhA/NTCSzRspZw8pyJLDIsf835SmBuuv6Oq21YneiW/fHEiV/9CxSmK+uqrcyRm5IDHv1XLzBVPSvssQhsB3OvMoCHJbXXSM1HFn7pVuyamhMOOClLRKj2FOmeD5u5+1CpwfAQiGUTo8N1ZeZ2EFgcGsAzc=
